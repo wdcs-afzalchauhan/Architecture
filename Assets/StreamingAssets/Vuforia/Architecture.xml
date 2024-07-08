@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="brochureyam-1-12" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-11" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-10" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-09" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-08" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-07" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-06" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-05" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-04" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-03" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-02" size="1.000000 1.307692" />
+    <ImageTarget name="brochureyam-1-01" size="1.000000 1.307692" />
+  </Tracking>
+</QCARConfig>
