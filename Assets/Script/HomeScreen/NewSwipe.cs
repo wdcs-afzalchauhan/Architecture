@@ -31,7 +31,6 @@ public class NewSwipe : MonoBehaviour
     [Space(10)]
     public List<Transform> child;
 
-    public ScrollRect scrollRect;
 
 
     void Start()
@@ -52,6 +51,8 @@ public class NewSwipe : MonoBehaviour
 
     void Update()
     {
+        if (ScrollManager.Instance.activeScrollRect != null)
+            return;
 
         if (isScrolling)
         {

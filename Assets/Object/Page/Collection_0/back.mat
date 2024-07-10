@@ -159,10 +159,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _AdvancedDissolveBakedKeywords: {r: 0, g: 0, b: 0, a: 0}
-    - _AdvancedDissolveCutoutGeometric1Normal: {r: -0.7394287, g: 0.5968966, b: 0.31138372,
-        a: 0}
-    - _AdvancedDissolveCutoutGeometric1Position: {r: -0.09561174, g: 0.048043683,
-        b: 0.37818485, a: 0}
+    - _AdvancedDissolveCutoutGeometric1Normal: {r: 0, g: 1, b: 0, a: 0}
+    - _AdvancedDissolveCutoutGeometric1Position: {r: 0, g: -0.0011000037, b: 0, a: 0}
     - _AdvancedDissolveCutoutGeometric2Normal: {r: 1, g: 0, b: 0, a: 0}
     - _AdvancedDissolveCutoutGeometric2Position: {r: 0, g: 0, b: 0, a: 0}
     - _AdvancedDissolveCutoutGeometric3Normal: {r: 1, g: 0, b: 0, a: 0}
