@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 002
+  m_Shader: {fileID: 4800000, guid: 977ce85d64e1849409668a559c7d1c4d, type: 3}
+  m_Parent: {fileID: 2100000, guid: 007b90dd0db5e644691ae73de244e193, type: 2}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _AD_CUTOUT_GEOMETRIC_TYPE_PLANE
+  - _AD_CUTOUT_STANDARD_SOURCE_CUSTOM_MAP
+  - _AD_EDGE_BASE_SOURCE_CUTOUT_GEOMETRIC
+  - _AD_STATE_ENABLED
+  - _GLOSSYREFLECTIONS_OFF
+  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_InvalidKeywords:
+  - _AD_CUTOUT_GEOMETRIC_COUNT_ONE
+  - _AD_CUTOUT_STANDARD_SOURCE_MAPS_MAPPING_TYPE_DEFAULT
+  - _AD_EDGE_ADDITIONAL_COLOR_NONE
+  - _AD_EDGE_UV_DISTORTION_SOURCE_DEFAULT
+  - _AD_GLOBAL_CONTROL_ID_NONE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9e2eacfbb2973f949a9c26ffad35bace, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats: []
+    m_Colors:
+    - _AdvancedDissolveCutoutGeometric1Normal: {r: 0, g: 1, b: 0, a: 0}
+    - _AdvancedDissolveCutoutGeometric1Position: {r: 0, g: 0.13050002, b: 0.000000007450581,
+        a: 0}
+    - _AdvancedDissolveEdgeBaseColor: {r: 0.28235292, g: 0.22745094, b: 0.11764703,
+        a: 1}
+  m_BuildTextureStacks: []

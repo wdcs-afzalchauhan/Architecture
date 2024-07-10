@@ -142,7 +142,10 @@ public class UIManager : MonoBehaviour
     public void ResetBtn()
     {
         if (objectManager)
+        {
+            BtnClick(0);
             objectManager.ResetObject();
+        }
     }
 
     public void Back()
