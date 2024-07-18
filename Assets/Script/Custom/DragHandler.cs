@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class NewSwipe : MonoBehaviour, IBeginDragHandler, IEndDragHandler
+public class DragHandler : MonoBehaviour, IBeginDragHandler, IEndDragHandler
 {
     public bool m_Dragging;
     public bool isTouching;

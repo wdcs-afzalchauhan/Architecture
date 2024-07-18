@@ -15,8 +15,6 @@ public class UiAnimation : MonoBehaviour
     public List<Transform> rot = new List<Transform>();
     public List<Transform> pos = new List<Transform>();
 
-    public NewSwipe newSwipe;
-
     public float waitTime = 1;
 
     private void Awake()
@@ -34,8 +32,6 @@ public class UiAnimation : MonoBehaviour
     public void CloseScreen()
     {
 
-        if (newSwipe)
-            newSwipe.enabled = false;
 
         bg.DOFade(0, 0);
 
@@ -62,9 +58,6 @@ public class UiAnimation : MonoBehaviour
                 yield return new WaitForSeconds(waitTime);
             }
         }
-
-        if (newSwipe)
-            newSwipe.enabled = true;
 
         HomeManager.instance.isAnim = false;
     }

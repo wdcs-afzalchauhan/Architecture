@@ -1420,7 +1420,6 @@ GameObject:
   - component: {fileID: 638653389}
   - component: {fileID: 638653392}
   - component: {fileID: 638653393}
-  - component: {fileID: 638653394}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1490,29 +1489,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!114 &638653394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638653388}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db63829c9d7ca5f4b8f35934ff5a41bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollbar: {fileID: 1382328316}
-  content: {fileID: 638653389}
-  smoothSpeed: 5
-  scaleMiddle: 1
-  scaleOther: 1
-  swipeThreshold: 1310
-  smallSwipeThreshold: 50
-  animTime: 0.25
-  itemCount: 0
-  Crt: 0
-  child: []
 --- !u!1 &648875572
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,7 +3319,6 @@ MonoBehaviour:
   - {fileID: 1758267952}
   rot: []
   pos: []
-  newSwipe: {fileID: 0}
   waitTime: 0.2
 --- !u!114 &1135749896
 MonoBehaviour:
@@ -3461,6 +3436,7 @@ GameObject:
   - component: {fileID: 1206830960}
   - component: {fileID: 1206830959}
   - component: {fileID: 1206830961}
+  - component: {fileID: 1206830962}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -3542,7 +3518,7 @@ MonoBehaviour:
   m_Content: {fileID: 638653389}
   m_Horizontal: 1
   m_Vertical: 0
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -3550,13 +3526,50 @@ MonoBehaviour:
   m_Viewport: {fileID: 738895758}
   m_HorizontalScrollbar: {fileID: 1382328316}
   m_VerticalScrollbar: {fileID: 0}
-  m_HorizontalScrollbarVisibility: 0
+  m_HorizontalScrollbarVisibility: 1
   m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: 0
   m_VerticalScrollbarSpacing: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: NewSwipe, Assembly-CSharp
+        m_MethodName: ChangePosOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1206830962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206830957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8f15c438cb2524a96c85fb1ff580b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Dragging: 0
+  isTouching: 0
+  isScrolling: 0
+  scrollbar: {fileID: 1382328316}
+  content: {fileID: 638653389}
+  smoothSpeed: 5
+  scaleMiddle: 1
+  scaleOther: 1
+  swipeThreshold: 50
+  smallSwipeThreshold: 15
+  itemCount: 3
+  animTime: 0.25
+  child: []
 --- !u!1 &1240523045
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,7 +4407,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 794711790}
   m_Direction: 0
   m_Value: 0.5
-  m_Size: 0.34507042
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5875,7 +5888,6 @@ MonoBehaviour:
   - {fileID: 207259756}
   rot: []
   pos: []
-  newSwipe: {fileID: 638653394}
   waitTime: 0.2
 --- !u!114 &1976883552
 MonoBehaviour:
@@ -6098,7 +6110,7 @@ MonoBehaviour:
   m_Inertia: 1
   m_DecelerationRate: 0.135
   m_ScrollSensitivity: 1
-  m_Viewport: {fileID: 0}
+  m_Viewport: {fileID: 1065325173}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
   m_HorizontalScrollbarVisibility: 0
